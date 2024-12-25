@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <script>
+    // Incorrect usage of innerHTML.  The script attempts to assign a value of type 'number' to the 'innerHTML' property. 
+    document.getElementById("myDiv").innerHTML = 123;
+  </script>
+</body>
+</html>
